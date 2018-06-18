@@ -1,0 +1,129 @@
+/* Para customizar Bootstrap 4 */
+/* General */
+html, body {
+    font-family: Raleway;
+}
+body {
+    background-image: url("../img/fondoPattern3.png");
+}
+/* Iniciales */
+h1, h2, h3, h4 {
+    text-align: center;
+}
+legend {
+    color: green;
+    font-weight: bolder;
+}
+a {
+    text-decoration: none;
+}
+img[src=""] {
+    display: none;
+}
+#btnVolverArriba {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.7);
+    outline: none;
+    background-color: #ffa813;
+    color: rgba(0, 0, 0, 0.98);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+.jumbotron {
+
+}
+#presentacion .carousel-caption {
+
+}
+#presentacion h2, #presentacion p {
+    background-color: rgba(0, 0, 0, 0.66);
+    color: white;
+    padding-left: 0;
+    padding-right: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+}
+/* PARA CORTAR LA IMAGEN DEL CARRUSEL */
+/*.crop {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.crop img {
+    position: absolute;
+    bottom: -40%;
+}*/
+/* PARA QUE NO SEAN DEMASIADO GRANDES LOS TÍTULOS EN EL CARRUSEL EN VERSIÓN MÓVIL */
+@media only screen and (max-width: 576px) {
+    #presentacion h2 {
+        font-size: 1em;
+    }
+}
+#opiniones p{
+    color: #666666;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+    border-radius: 5px;
+}
+/* PARA EL FORMULARIO DE CONTACTO */
+.form-contacto {
+    width: 100%;
+    max-width: 660px;
+    padding: 15px;
+    margin: auto;
+}
+.form-contacto .checkbox {
+    font-weight: 400;
+}
+.form-contacto .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-contacto .form-control:focus {
+    z-index: 2;
+}
+.form-contacto input, select {
+    font-weight: bold;
+}
+.form-control::placeholder {
+    font-weight: normal;
+}
+.form-contacto input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-contacto input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none;
+    background-color: #fff;
+    border: .05rem solid #fff;
+}
+.btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+}
